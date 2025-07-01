@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f8ff;
+  color: #060339;
+}
+
+.header {
+  background: linear-gradient(to right, #eaf3ff, #d6e6ff);
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #0c0a80;
+}
+
+.header p {
+  font-size: 18px;
+  color: #0e0c70;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.form-container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(14, 12, 112, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #1613a1;
+  margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccdfff;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f9fcff;
+}
+
+form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #1613a1;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #0e0c70;
+}
+
+.info-section {
+  background: #f0f6ff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.info-section h3 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #0c0a80;
+}
+
+.info-blocks {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.info-block {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 0 0 10px rgba(6, 3, 57, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.info-block:hover {
+  transform: translateY(-5px);
+}
+
+.info-block h4 {
+  color: #060339;
+  margin-bottom: 10px;
+}
+
+.info-block p {
+  color: #333;
+  font-size: 14px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #e8efff;
+  color: #060339;
+  font-size: 14px;
+}

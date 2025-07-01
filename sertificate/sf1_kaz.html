@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Сертификаттар | TEC Engineering</title>
+  <link rel="stylesheet" href="sf1.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <h1>Сертификаттар <i class="fa-solid fa-angle-down"></i></h1>
+    <p>Сапа мен сенімділікті растайтын құжаттар</p>
+  </header>
+
+  <section class="certificates">
+    <div class="accordion">
+      <button class="accordion-btn">TECE профилінің сынақ есебі <i class="fa-solid fa-chevron-down"></i></button>
+      <div class="accordion-content">
+        <p>Техникалық ақпарат, есептер мен сертификаттар</p>
+        <a href="../serteficate pdf/Отчет об испытаниях профиля TECE.pdf" download class="download-btn">PDF жүктеу</a>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <button class="accordion-btn">Зауытта дайындалған қабырға модульдері <i class="fa-solid fa-chevron-down"></i></button>
+      <div class="accordion-content">
+        <h2>Сипаттамалар декларациясы, есептер мен сертификаттар</h2>
+        <p>TECE аспалы унитазға арналған бачок: МӘЛІМДЕЛГЕН СИПАТТАМАЛАР DOP 14055-1.</p>
+        <a href="../serteficate pdf/DoP_14055-1_15.pdf" download class="download-btn">PDF жүктеу</a>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <button class="accordion-btn">Сантехникалық каркас жүйесі | Өнімдер мен жүйелер | Құбыр жүйелері <i class="fa-solid fa-chevron-down"></i></button>
+      <div class="accordion-content">
+        <h2>TECEfloor / TECEprofil / TECElux — Электр және желдету жүйелері</h2>
+        <a href="../serteficate pdf/Электрика и вентиляция_05_2023.pdf" download class="download-btn">PDF жүктеу</a>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <button class="accordion-btn">卫生陶瓷 (санфаянс) <i class="fa-solid fa-chevron-down"></i></button>
+      <div class="accordion-content">
+        <h2>Сипаттамалар декларациясы, есептер мен сертификаттар</h2>
+        <p>TECEone: МӘЛІМДЕЛГЕН СИПАТТАМАЛАР DOP EN997.</p>
+        <a href="../serteficate pdf/DoP_997_10 (卫浴陶瓷 ).pdf" download class="download-btn">PDF жүктеу</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 TEC ENGINEERING</p>
+  </footer>
+
+  <script>
+    const accButtons = document.querySelectorAll('.accordion-btn');
+    accButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('active');
+        const content = btn.nextElementSibling;
+        content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
+      });
+    });
+  </script>
+</body>
+</html>

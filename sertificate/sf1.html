@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Сертификаты | TEC Engineering</title>
+  <link rel="stylesheet" href="sf1.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <h1>Сертификаты <i class="fa-solid fa-angle-down"></i></h1>
+    <p>Документы, подтверждающие качество и надёжность</p>
+  </header>
+
+  <section class="certificates">
+    <div class="accordion">
+      <button class="accordion-btn">Отчет об испытаниях профиля TECE<i class="fa-solid fa-chevron-down"></i></button>
+      <div class="accordion-content">
+        <p>Техническая информация, Отчеты и сертификаты</p>
+        <a href="../serteficate pdf/Отчет об испытаниях профиля TECE.pdf" download class="download-btn">Скачать PDF</a>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <button class="accordion-btn">Застенные модули заводского изготовления <i class="fa-solid fa-chevron-down"></i></button>
+      <div class="accordion-content">
+        <h2>Декларация о рабочих характеристиках, Отчеты и сертификаты</h2>
+        <p>TECE Бачок для подвесного унитаза: ЗАЯВЛЕННЫЕ ХАРАКТЕРИСТИКИ DOP 14055-1.</p>
+        <a href="../serteficate pdf/DoP_14055-1_15.pdf" download class="download-btn">Скачать PDF</a>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <button class="accordion-btn">Каркасная система для сантехники | Сантехнические изделия и системы | Трубопроводные системы<i class="fa-solid fa-chevron-down"></i></button>
+      <div class="accordion-content">
+        <h2>Электрика и вентиляция TECEfloor / TECEprofil / TECElux </h2>
+        <a href="../serteficate pdf/Электрика и вентиляция_05_2023.pdf" download class="download-btn">Скачать PDF</a>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <button class="accordion-btn">卫浴陶瓷<i class="fa-solid fa-chevron-down"></i></button>
+      <div class="accordion-content">
+        <h2>Декларация о рабочих характеристиках, Отчеты и сертификаты</h2>
+        <p>TECEone: ЗАЯВЛЕННЫЕ ХАРАКТЕРИСТИКИ DOP EN997.</p>
+        <a href="../serteficate pdf/DoP_997_10 (卫浴陶瓷 ).pdf" download class="download-btn">Скачать PDF</a>
+      </div>
+    </div>
+
+
+  </section>
+
+  <footer>
+    <p>© 2025 TEC ENGINEERING</p>
+  </footer>
+
+  <script>
+    const accButtons = document.querySelectorAll('.accordion-btn');
+    accButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('active');
+        const content = btn.nextElementSibling;
+        content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
+      });
+    });
+  </script>
+</body>
+</html>

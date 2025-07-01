@@ -1,0 +1,163 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.catalog-section h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #003366;
+  margin-bottom: 40px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.certificate-card {
+  position: relative;
+  display: flex;
+  background: #fff;
+  border-radius: 16px;
+  min-height: 320px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+
+.certificate-card::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  bottom: 30px;
+  left: 50%;
+  width: 3px;
+  background-color: #0077cc;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  z-index: 1;
+}
+
+
+.card-left {
+  width: 50%;
+  background-color: #d4dff9;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-left h2 {
+  font-size: 24px;
+  color: #2b2b2b;
+  margin-bottom: 15px;
+}
+
+.card-left p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.5;
+  max-width: 500px;
+}
+
+
+.card-right {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  background-color: #ffffff;
+}
+
+
+.download-row {
+  display: flex;
+  gap: 50px; 
+  flex-wrap: wrap;
+}
+
+/* Текст + кнопка */
+.download-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 140px;
+  min-width: 120px;
+  gap: 14px; 
+}
+
+.download-group p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.download-btn {
+  background-color: #0077cc;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.download-btn:hover {
+  background-color: #005fa3;
+}
+@media (max-width: 610px) {
+  .certificate-card {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .card-left,
+  .card-right {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .card-left {
+    border-bottom: 3px solid #0077cc;
+
+  }
+  .card-left p{
+    padding: 0 30px;
+  }
+  .card-left h2{
+    padding: 0 30px;
+
+  }
+
+  .certificate-card::before {
+    display: none;
+  }
+
+  .download-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .download-group {
+    width: 50%;
+  }
+}
+

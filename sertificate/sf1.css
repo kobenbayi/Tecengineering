@@ -1,0 +1,118 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f7fa;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px 30px;
+  background-color: #d5e5fb;
+  color: #222;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+header h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+header h1 i {
+  margin-left: 10px;
+  color: #8b0000;
+}
+
+header p {
+  font-size: 16px;
+  color: #555;
+}
+
+.certificates {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.accordion {
+  background-color: #ffffff;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.accordion-btn {
+  width: 100%;
+  background-color: #f0f4ff;
+  color: #333;
+  padding: 14px 20px;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.accordion-btn:hover {
+  background-color: #dce9ff;
+}
+
+.accordion-btn i {
+  float: right;
+  transition: transform 0.3s ease;
+}
+
+.accordion-btn.active i {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  background-color: #ffffff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 20px;
+  
+}
+
+.accordion-content h2 {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.accordion-content p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  background-color: #8b0000;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.download-btn:hover {
+  background-color: #a60000;
+}
+
+footer {
+  text-align: center;
+  padding: 54px;
+  background-color: #d5e5fb;
+  font-size: 16px;
+  color: #777;
+}
